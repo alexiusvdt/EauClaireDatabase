@@ -12,12 +12,14 @@
     <link href="~/HairSalon/wwwroot/css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-  @RenderSection("~/HairSalon/Views/Shared/_Header.cshtml")
+  <div id="header">
+  @RenderSection("header")
+  </div>
   <div id="main">
     @RenderBody()
   </div>
   <div id="footer">
-  @RenderSection("~/HairSalon/Views/Shared/_Footer.cshtml")
+  @RenderSection("footer")
   </div>
   </body>
 
