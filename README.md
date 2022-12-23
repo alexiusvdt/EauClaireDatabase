@@ -23,10 +23,28 @@ User Stories
 * As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added.
 
 
-
 ## Setup/Installation Requirements
+* clone the repo & open terminal in HairSalon directory  or navigate via commandline
+* run these commands to install necessary dependencies:
+     * $ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
+     * $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
 
-* FILL THIS OUT
+## Configuration
+* In the HairSalon directory, create a file called appsettings.json
+* enter the following code, updating the placeholders to your id
+
+{
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR_DATABASE_HERE];uid=[YOUR_UID];pwd=[YOUR_PASSWORD];"
+    }
+}
+* save and close the file.
+
+
+## Running the program
+* open a terminal in main folder or navigate via commandline\
+* enter $dotnet run build
+
 
 ## Known Bugs
 
