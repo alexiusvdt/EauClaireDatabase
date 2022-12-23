@@ -9,7 +9,7 @@
 * C#
 * MySQL
 * EFCore
-* 
+* LINQ
 * 
 
 
