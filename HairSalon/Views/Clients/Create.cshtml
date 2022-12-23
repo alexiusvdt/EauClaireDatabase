@@ -5,7 +5,7 @@
 @model HairSalon.Models.Client
 
 <p>You must have at least one stylist before attempting to add clients!</p>
-<p>Go  @Html.ActionLink("here", "Create", "Stylists") to create a stylist entry.</p>
+<p>Go to the add stylist page to add a stylist: @Html.ActionLink("stylist page", "Create", "Stylists").</p>
 
 <h4>Add a new client</h4>
 @using (Html.BeginForm())
