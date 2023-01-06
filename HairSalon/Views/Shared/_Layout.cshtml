@@ -3,15 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>@ViewBag.PageTitle</title>
-    <link 
+    <!-- <link 
       rel="stylesheet" 
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
-      crossorigin="anonymous">    
-    <link rel="stylesheet" href="~/css/styles.css">
+      crossorigin="anonymous">     -->
+    <!-- <link rel="stylesheet" href="~/css/styles.css" type="text/css"> -->
+    <link href="~/HairSalon/wwwroot/css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+  <div id="header">
+  @RenderSection("header")
+  </div>
+  <div id="main">
     @RenderBody()
-    @await Html.PartialAsync("Footer")
+  </div>
+  <div id="footer">
+  @RenderSection("footer")
+  </div>
   </body>
+
 </html>

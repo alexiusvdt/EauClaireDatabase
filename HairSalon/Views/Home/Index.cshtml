@@ -1,0 +1,6 @@
+@{
+  Layout = "_Layout";
+}
+@RenderSection("_Header")
+<h1>Welcome to your stylist database!</h1>
+<p>@Html.ActionLink("See all clients", "Index", "Clients")</p> <p>@Html.ActionLink("See all stylists", "Index", "Stylists")</p>
