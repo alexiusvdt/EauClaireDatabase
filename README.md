@@ -19,8 +19,8 @@
 
 * clone the repo & open terminal in `HairSalon directory` or navigate there directly via commandline
 * run these commands to install necessary dependencies:
-     `* `$ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`
-     `* $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0`
+     * `dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`
+     * `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0`
 
 * Open MySQLWorkbench & navigate to the administration tab
 * Select "Import from Self Contained File"
@@ -30,7 +30,7 @@
 
 ## Configuration
 * In the `HairSalon` directory, create a file called `appsettings.json`
-* enter the following code, updating the placeholders to your information
+* enter the following code, updating the placeholders to your information:
 `{
     "ConnectionStrings": {
         "DefaultConnection": "Server=localhost;Port=3306;database=alex_johnson;uid=[YOUR_UID];pwd=[YOUR_PASSWORD];"
