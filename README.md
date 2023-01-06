@@ -7,7 +7,7 @@
 ## Technologies Used
 
 * C#
-* MySQL
+* MySQL/MySQL Workbench
 * EFCore
 * LINQ
 
@@ -17,32 +17,30 @@
 
 ## Setup/Installation Requirements
 
-* clone the repo & open terminal in HairSalon directory  or navigate via commandline
+* clone the repo & open terminal in `HairSalon directory` or navigate there directly via commandline
 * run these commands to install necessary dependencies:
-     * $ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0
-     * $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0
+     `* `$ dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`
+     `* $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0`
 
 * Open MySQLWorkbench & navigate to the administration tab
 * Select "Import from Self Contained File"
-* Select the .sql file in the top level directory and import as a new schema with the same name
+* Select the .sql file in the top level directory named `alex_johnson` and import as a new schema with the same name 
 * Select start import
 * Confirm the installation was successful by reviewing any errors
 
 ## Configuration
-* In the HairSalon directory, create a file called appsettings.json
+* In the `HairSalon` directory, create a file called `appsettings.json`
 * enter the following code, updating the placeholders to your information
-
-{
+`{
     "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR_DATABASE_HERE];uid=[YOUR_UID];pwd=[YOUR_PASSWORD];"
+        "DefaultConnection": "Server=localhost;Port=3306;database=alex_johnson;uid=[YOUR_UID];pwd=[YOUR_PASSWORD];"
     }
-}
+}`
 * save and close the file.
 
-
 ## Running the program
-* open a terminal in main folder or navigate via commandline\
-* enter $ dotnet run build
+* open a terminal in the `HairSalon` directory or navigate via commandline
+* enter `dotnet run build`
 
 ## Known Bugs
 
