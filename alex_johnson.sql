@@ -16,40 +16,40 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `client`
+-- Table structure for table `clients`
 --
 
-DROP TABLE IF EXISTS `client`;
+DROP TABLE IF EXISTS `clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `client` (
+CREATE TABLE `clients` (
   `ClientId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   `StylistId` int DEFAULT '0',
   PRIMARY KEY (`ClientId`),
   UNIQUE KEY `ClientId_UNIQUE` (`ClientId`),
   KEY `StylistId_idx` (`StylistId`),
-  CONSTRAINT `StylistId` FOREIGN KEY (`StylistId`) REFERENCES `stylist` (`StylistId`)
+  CONSTRAINT `StylistId` FOREIGN KEY (`StylistId`) REFERENCES `stylists` (`StylistId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `client`
+-- Dumping data for table `clients`
 --
 
-LOCK TABLES `client` WRITE;
-/*!40000 ALTER TABLE `client` DISABLE KEYS */;
-/*!40000 ALTER TABLE `client` ENABLE KEYS */;
+LOCK TABLES `clients` WRITE;
+/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `stylist`
+-- Table structure for table `stylists`
 --
 
-DROP TABLE IF EXISTS `stylist`;
+DROP TABLE IF EXISTS `stylists`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `stylist` (
+CREATE TABLE `stylists` (
   `StylistId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistId`),
@@ -58,12 +58,12 @@ CREATE TABLE `stylist` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `stylist`
+-- Dumping data for table `stylists`
 --
 
-LOCK TABLES `stylist` WRITE;
-/*!40000 ALTER TABLE `stylist` DISABLE KEYS */;
-/*!40000 ALTER TABLE `stylist` ENABLE KEYS */;
+LOCK TABLES `stylists` WRITE;
+/*!40000 ALTER TABLE `stylists` DISABLE KEYS */;
+/*!40000 ALTER TABLE `stylists` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -75,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-23  8:11:02
+-- Dump completed on 2023-01-14 11:24:41
