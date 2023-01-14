@@ -32,11 +32,13 @@
 * In the `HairSalon` directory, create a file called `appsettings.json`
 * enter the following code, updating the placeholders to your information:
 
-```{
+```
+{
     "ConnectionStrings": {
         "DefaultConnection": "Server=localhost;Port=3306;database=alex_johnson;uid=[YOUR_UID];pwd=[YOUR_PASSWORD];"
     }
-}```
+}
+```
 
 * save and close the file.
 
